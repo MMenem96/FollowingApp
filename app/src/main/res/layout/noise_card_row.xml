@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<app:android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/noise_card_row"
+    cardCornerRadius="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:elevation="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/thumbnailNoises"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_noise" />
+
+        <TextView
+            android:id="@+id/noiseDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/thumbnailNoises"
+            android:layout_toRightOf="@id/thumbnailNoises"
+            android:text="@string/dateText_txt"
+            android:textColor="@color/secondColor"
+            android:textSize="@dimen/textview_font_size" />
+
+        <TextView
+            android:id="@+id/noiseValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/noiseDate"
+            android:layout_toEndOf="@id/thumbnailNoises"
+            android:layout_toRightOf="@id/thumbnailNoises"
+            android:text="@string/report_value"
+            android:textColor="@color/secondColor"
+            android:textSize="@dimen/textview_font_size" />
+
+
+    </RelativeLayout>
+
+</app:android.support.v7.widget.CardView>

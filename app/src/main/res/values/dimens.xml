@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="textview_font_size">15sp</dimen>
+    <dimen name="card_margin">10</dimen>
+    <dimen name="card_album_radius">10</dimen>
+</resources>

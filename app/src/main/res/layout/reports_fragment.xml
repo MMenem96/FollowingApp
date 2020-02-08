@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorLayoutInfo"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:background="@color/colorLayoutInfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/llLight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/card_shape">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/thumbnailLight"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_light" />
+
+                    <TextView
+                        android:id="@+id/lightName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_toEndOf="@id/thumbnailLight"
+                        android:layout_toRightOf="@id/thumbnailLight"
+                        android:text="@string/light_txt"
+                        android:textColor="@color/secondColor"
+                        android:textSize="@dimen/textview_font_size" />
+
+                    <TextView
+                        android:id="@+id/reportLightSize"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/lightName"
+                        android:layout_toEndOf="@id/thumbnailLight"
+                        android:layout_toRightOf="@id/thumbnailLight"
+                        android:text="@string/report_size"
+                        android:textColor="@color/secondColor"
+                        android:textSize="@dimen/textview_font_size" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSpeed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/llLight"
+                android:layout_margin="10dp"
+                android:background="@drawable/card_shape">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/thumbnailSpeed"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_speed" />
+
+                    <TextView
+                        android:id="@+id/speedName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_toEndOf="@id/thumbnailSpeed"
+                        android:layout_toRightOf="@id/thumbnailSpeed"
+                        android:text="@string/speed_txt"
+                        android:textColor="@color/secondColor"
+                        android:textSize="@dimen/textview_font_size" />
+
+                    <TextView
+                        android:id="@+id/reportSpeedSize"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/speedName"
+                        android:layout_toEndOf="@id/thumbnailSpeed"
+                        android:layout_toRightOf="@id/thumbnailSpeed"
+                        android:text="@string/report_size"
+                        android:textColor="@color/secondColor"
+                        android:textSize="@dimen/textview_font_size" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/llNoise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llSpeed"
+                android:layout_margin="10dp"
+                android:background="@drawable/card_shape">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/thumbnailNoise"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_noise" />
+
+                    <TextView
+                        android:id="@+id/noiseName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_toEndOf="@id/thumbnailNoise"
+                        android:layout_toRightOf="@id/thumbnailNoise"
+                        android:text="@string/noise_txt"
+                        android:textColor="@color/secondColor"
+                        android:textSize="@dimen/textview_font_size" />
+
+                    <TextView
+                        android:id="@+id/reportNoiseSize"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/noiseName"
+                        android:layout_toEndOf="@id/thumbnailNoise"
+                        android:layout_toRightOf="@id/thumbnailNoise"
+                        android:text="@string/report_size"
+                        android:textColor="@color/secondColor"
+                        android:textSize="@dimen/textview_font_size" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llAccelerometer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llNoise"
+                android:layout_margin="10dp"
+                android:background="@drawable/card_shape">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/thumbnailAccelerometer"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_accelerometer" />
+
+                    <TextView
+                        android:id="@+id/accelerometerName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_toEndOf="@id/thumbnailAccelerometer"
+                        android:layout_toRightOf="@id/thumbnailAccelerometer"
+                        android:text="@string/accelerometer_txt"
+                        android:textColor="@color/secondColor"
+                        android:textSize="@dimen/textview_font_size" />
+
+                    <TextView
+                        android:id="@+id/reportAccelerometerSize"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/accelerometerName"
+                        android:layout_toEndOf="@id/thumbnailAccelerometer"
+                        android:layout_toRightOf="@id/thumbnailAccelerometer"
+                        android:text="@string/report_size"
+                        android:textColor="@color/secondColor"
+                        android:textSize="@dimen/textview_font_size" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/llLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llAccelerometer"
+                android:layout_margin="10dp"
+                android:background="@drawable/card_shape">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/thumbnailLocation"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_placeholder" />
+
+                    <TextView
+                        android:id="@+id/locationName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_toEndOf="@id/thumbnailLocation"
+                        android:layout_toRightOf="@id/thumbnailLocation"
+                        android:text="@string/location_txt"
+                        android:textColor="@color/secondColor"
+                        android:textSize="@dimen/textview_font_size" />
+
+                    <TextView
+                        android:id="@+id/reportSize"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/locationName"
+                        android:layout_toEndOf="@id/thumbnailLocation"
+                        android:layout_toRightOf="@id/thumbnailLocation"
+                        android:text="@string/report_size"
+                        android:textColor="@color/secondColor"
+                        android:textSize="@dimen/textview_font_size" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

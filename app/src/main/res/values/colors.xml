@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorSplashActivityBackground">#fef4e8</color>
+    //Action bar backgroung
+    <color name="colorActionbarBackground">#302939</color>\
+    //Activity background
+    <color name="colorActivityBackground">#37000000</color>
+    //Button navigation view color
+    <color name="colorButtonNavView">#50595c</color>
+    //Info bar
+    <color name="colorLayoutInfo">#ffd8d8</color>
+
+    <color name="white">#ffffff</color>
+    <color name="border_home_tabs_color">#dad7d7</color>
+    <color name="secondColor">#50595c</color>
+    <color name="black">#000000</color>
+
+
+
+
+</resources>

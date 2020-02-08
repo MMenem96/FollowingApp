@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/speed_card_row"
+    cardCornerRadius="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:elevation="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/thumbnailSpeeds"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_speed" />
+
+        <TextView
+            android:id="@+id/speedDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/thumbnailSpeeds"
+            android:layout_toRightOf="@id/thumbnailSpeeds"
+            android:text="@string/dateText_txt"
+            android:textColor="@color/secondColor"
+            android:textSize="@dimen/textview_font_size" />
+
+        <TextView
+            android:id="@+id/speedValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/speedDate"
+            android:layout_toEndOf="@id/thumbnailSpeeds"
+            android:layout_toRightOf="@id/thumbnailSpeeds"
+            android:text="@string/report_value"
+            android:textColor="@color/secondColor"
+            android:textSize="@dimen/textview_font_size" />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

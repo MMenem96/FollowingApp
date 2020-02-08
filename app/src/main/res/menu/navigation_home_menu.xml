@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_report"
+        android:icon="@drawable/ic_report"
+        android:title="@string/report_txt" />
+    <item
+        android:id="@+id/navigation_followers"
+        android:icon="@drawable/ic_follower"
+        android:title="@string/follower_txt" />
+    <item
+        android:id="@+id/navigation_following"
+        android:icon="@drawable/ic_following"
+        android:title="@string/following_txt" />
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/ic_no_new_notifications"
+        android:title="@string/notification_txt" />
+</menu>
